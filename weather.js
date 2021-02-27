@@ -3,7 +3,7 @@ const hanRiverCoords = {lat:37.511559136449065, lon:126.9745030706592}
 const tempDisplayer = document.querySelector('.temperature');
 
 function displayWeather(weatherObj) {
-    tempDisplayer.innerHTML = `${(0.7*weatherObj.main.temp + 5).toFixed(2)}°C`
+    tempDisplayer.innerHTML = `${(0.7*weatherObj.main.temp + 5).toFixed(1)}°C`
 }
 
 function getWeather() {
